@@ -59,6 +59,6 @@ CREATE TABLE UserRole (
     idUser INT NOT NULL,
     idrol INT NOT NULL,
     PRIMARY KEY (idUser, idrol),
-    FOREIGN KEY (idUser) REFERENCES Users(UserID),
-    FOREIGN KEY (idrol) REFERENCES Roles(RoleID)
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (Roleid) REFERENCES Roles(RoleID)
 );
